@@ -3,6 +3,7 @@ package com.example.eventflow.event;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
 import com.example.eventflow.usuario.Usuario;
 
 import jakarta.persistence.Entity;
@@ -21,6 +22,7 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+ 
     @ManyToOne
     @JoinColumn(name="usuario_id")
     private Usuario usuario;
